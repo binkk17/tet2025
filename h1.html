@@ -69,7 +69,46 @@
         </thead>
     </table>
     <iframe src="https://example.com" width="400" height="200"></iframe> -->
+    <style>
+        thead,table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+    </style>
 
+    <table>
+        <thead>
+            <tr>
+                cot1
+            </tr>
+            <tr>
+                cot2
+            </tr>
+            <tr>
+                cot3
+            </tr>
+
+            <tr>
+                <td rowspan="3">cot1</td>
+                <td>cot2</td>
+                <td>cot3</td>
+                <td>cot3</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td rowspan="2"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+
+
+        </thead>
+
+    </table>
 
 
 
