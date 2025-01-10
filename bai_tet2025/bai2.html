@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<>  
+    <style>
+        img{
+            width: ;
+            height: 300px;
+        }
+        video{
+            height: 240px;
+            width: 320px;
+        }
+        table,thead,th,tr,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+
+
+        }
+        tr,th,td{
+            padding: 5px;
+        }
+        .chu1{
+            text-align: center;
+            font-size: 24px;
+        }
+        .xin{
+            text-align: left;
+            font-size: 12px;
+        }
+    </style>
+    <!-- comment thẻ a để chuyển hướng trang, thẻ href là đường dẫn, title dùng để hiển thị, target để chọn mở trang khác dựa vào hiện tại(self) hoặc mở một thẻ trang khác(_blank)-->
+    <a href="................" target= "_blank" title=" đoán xem">Hãy bấm vào đây</a>
+    <br>
+    <!-- comment các thẻ ảnh với đường dẫn -->
+    <img src="/bai_tet2025/anh1.jpg" alt="hình ảnh 1">
+    <img src="anh1.jpg" alt="anh 2">
+    <img src="../bai_tet2025/anh1.jpg" alt="anh 3">
+    <!-- comment ảnh kết hợp với đường dẫn-->
+    <a href="https://animevietsub.moe/"><img src="anh1.jpg" alt="anh thẻ 4"></a>
+    <!-- comment the video -->
+    <video src="/bai_tet2025/nger.mp4" type="video/mp4" controls loop autoplay muted poster="videochill"></video>
+    <!-- comment the audio -->
+    <audio src="/bai_tet2025/HTML_audio_nger_mp3.mp3" type ="audio/mp3" controls loop></audio>
+    <!-- comment thẻ table-->
+    <table>
+        <thead>
+            <tr>
+                <th>cot1</th>
+                <th>cot2</th>
+                <th colspan="2">cot3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>cot1</td>
+                <td>cot2</td>
+                <td>cot3</td>
+                <td>cot4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p class="chu1"><Strong>BasicHTML</Strong></p>
+    <table>
+        <thead>
+            <tr>
+                <th >Leve1</th>
+                <th >Level2</th>
+                <th >Level3</th>
+                <th >Level4</th>
+                <th >Level5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr >
+                <td rowspan="6">cot1</td>
+                <td rowspan="4">System Apps</td>
+                <td rowspan="3">System env</td>
+                <td>App test</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App Memory</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App tes</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>System env2</td>
+                <td>App test</td>
+                <td>bar</td>
+            </tr>
+            <tr>
+                <td rowspan="2">System Memory</td>
+                <td rowspan="2">Memory test</td>
+                <td>Memory func</td>
+                <td>foo</td>
+            </tr>
+            <tr>
+                <td>App test</td>
+                <td>foo</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <tbody>
+            <tr>
+                <th rowspan="11">TCB</th>
+                <th>Order no:</th>
+                <td colspan="3">AB001</td>
+            </tr>
+            <tr>
+                <th>Order date</th>
+                <td colspan="3">23-Mar-2016</td>
+            </tr>
+            <tr>
+                <th colspan="4">Customer</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th><Address></Address></th>
+                <td colspan="3">ksajkajdksaj</td>
+            </tr>
+            <tr>
+                <th colspan="4">Order Details</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>omam</td>
+                <td>b</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>lm</td>
+                <td>b</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>lm</td>
+                <td>b</td>
+                <td>120</td>
+            </tr>            <tr>
+                <td>4</td>
+                <td>lm</td>
+                <td>b</td>
+                <td>120</td>
+            </tr>  
+            <tr>
+                <th colspan="3">Total</th>
+                <td>272</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- comment kieu danh sach ul khong danh so, li ky kieu dau dong la cac dau cham dau -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+    </ul>
+    <!-- comment kieu duoc danh so ol co the chon dinh dang bang kieu type-->
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+    <ol type="A">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+
+    <ol type="I">
+        <li>BS
+            <ol type="A">
+                <li>1</li>
+                <li>2</li>
+            </ol>
+        </li>
+        <li>
+            html
+            <ol type="A">
+                <li>1</li>
+                <li>2</li>
+
+            </ol>
+        </li>
+        <li>
+            háajaksaj
+            <ol type="i">
+                <li>2</li>
+                <li>1</li>
+            </ol>
+        </li>
+        <li>
+            ja
+            <ol type="a">
+                <li>1</li>
+                <li>2</li>
+                <li>3
+                    <ol type="i">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
+    <br>
+    <!-- Comment Cac kieu block luon nam tren mot hang -->
+    <address></address>
+    <article></article>
+    <aside></aside>
+    <blockquote></blockquote>
+    <div></div>
+    <footer></footer>
+    <form action=""></form>
+    <header></header>
+    <hr>
+    <li></li>
+    <main></main>
+    <nav></nav>
+    <ol></ol>
+    <section></section>
+    <table></table>
+    <p class="chu1">jahja</p>
+    <p id="xin">jashjas</p>
+</body>
+</html>
