@@ -1,0 +1,50 @@
+.senne{
+    background-color: rgb(9, 171, 150);
+    font-size: 30px;
+    overflow-y: auto;
+    overflow-x: auto;
+    text-align: center;
+    text-shadow:  2px 2px gray;
+    font-style: italic;
+    overflow: hidden;
+}
+.hihaha{
+    height: 640px;
+    width: 480px;
+}
+img{
+    height: 20%;
+    width: 20%;
+}
+.bdaa{
+    /* background-image:url(anh1.jpg), url(anh2.jpg) ; */
+    
+    background-image:url(anh1.jpg);
+    background-size: contain;
+
+    height: 960px;
+    width: 1200px;
+    /* background-attachment la chi dinh cho hinh anh co dinh vi tri du cho co keo xuong phia duoi hoac len tren */
+    background-attachment: fixed;
+}
+.bbbb{
+    /* background-size chon kich thuoc cho anh: 100% auto la tu chinh kich thuoc bang voi 100% khung va tu dong them anh khi kich thuoc khung vuot qua hinh anh*/
+    /* background-repeat cai dat hinh anh co lap lai hay khong repeat la co va no-repeat la khong */
+    /* background-position la chon vi tri cho hinh anh  viet theo truc x y*/
+    background-image: linear-gradient(20deg,rgba(166, 61, 42, 0.533),#2544b6), url(anh2.jpg);
+    background-size: 100% auto;
+    width: 240px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.lan3{
+    padding: 10px;
+    border: 5px solid gray;
+    width: 120px;
+    height: 120px;
+    /* can chinh le la margin  */
+    margin: 20px;
+    
+
+}
