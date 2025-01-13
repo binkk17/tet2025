@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* lay link de them kieu font chu vao trang https://fonts.google.com/selection#how-to-use */
+/* trang de lay icon https://fontawesome.com/icons */
+/* de nhung icon thi phai nhung <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+vao trong the html phan head  */
+.box{
+    border: solid black 5px;
+    padding: 20px 40%;
+    margin: 20px 20px;
+    background-color: aquamarine;
+    background-image: url(/anh1.jpg);
+    background-attachment: fixed;
+    
+}
+.box1{
+    border: ridge rebeccapurple 6px;
+    background-repeat: no-repeat;
+    padding: 10% 30%;
+    margin: 44px 70px;
+    background-image: url(/bai_tet2025/anh2.jpg);
+    /* background-clip: la pham vi xac dinh cho background-color chi chiem phan content: noi dung ,padding: laf chiem ca phan content va padding, boder la chiem ca content padding va border */
+    /* box-sizing la can chinh kich thuoc cho noi dung cua the, cung co ba loai la  */
+
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+.box2{
+    box-sizing: border-box;
+    background-color: red;
+    /* text-transform dieu chinh kieu chu in thuong hay in hoa */
+    /* text-align:chon vi tri cho content */
+    /* font-family: chinh kieu phong cho kieu chu */
+    font-family: "Shadows Into Light", serif;
+    font-weight: 400;
+    /* font-weight chinh do day cua chu */
+    font-style: normal;
+    /* font-style kieu in cua chu */
+    text-align: center;
+}
+/* Phần lề padding và phần content thì tổng kích thước phải bé hơn hoặc bằng với kích thước hight và weight của thẻ nếu không sẽ bị lỗi, ngoài ra chỉ nên dùng 1-2 phông trong một trang */
+table,th,tr,td{
+    border: solid black 5px;
+    border-radius: ;
+}
+table{
+    border-collapse: collapse;
+}
+/* <!-- border-collapse la bo khoang cach trong cac vien cuar table --> */
+
+/* Kieu display la hien thi gom co inline(khong dat duoc chieu rong va chieu cao, khong them duoc le margin , padding thi chinh duoc trai phai nhung tren duoi thi se bi hien thi de len nhung du lieu khac), 
+block(can chinh duoc tren duoi trai phai va luon bat dau tren mot hang moi), inline-block(ket hop cua ca inline va block ),
+none(khong co gi het) */
+.inline{
+    display: inline;
+    color: blue;
+    background-color: brown;
+}
+.block{
+    display: block;
+    color: aqua;
+    background-color: brown;
+}
+.inline-block{
+    display: inline-block;
+    background-color: rgb(9, 64, 64);
+    height: 50px;
+    width: 500px;
+    margin: 20px 20px;
+    padding: 20% 10%;
+    text-align: center;
+}
+.none{
+    display: none;
+}
+.visivility{
+    /* an va van chiem khoang chong */
+    visibility: hidden;
+    /* hien thi mac dinh  */
+    /* visibility:visible; */
+
+}
