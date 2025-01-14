@@ -113,3 +113,58 @@ khi viet nhu nay thì toàn bộ the2 nằm trong the1
 .chill .chill1{
     color: aqua;
 }
+/* hover la khi tro vao se hien thi mau do, visited la neu nhan vao thi lan sau quay lai se hien thi mau nay, link la khi lien ket chua duoc go vao lan nao 
+active la khi duoc nhan vao thi se ap dung cho tat ca cac the chi ap dung khi click vao,
+ngoai ra thi ngoai link va visited la chi ap dung cho the a thi con lai co the dung cho hau nhu tat ca*/
+.thea{
+    a{
+        color: black;
+    }
+    a:link{
+        color:aqua;
+    }
+    a:visited{
+        color: blue;
+    }
+    a:hover{
+        color: red;
+    }
+}
+
+.chin{
+    /* first-child thiet lap cho thuoc tinh thu nhat
+        last-child thiet lap cho thuoc tinh cuoi cung
+        nth-child thiet lap cho thuoc tinh thu tu chon ngoai ra even la chan, odd la le,  */
+    ul li:first-child{
+        color: red;
+        background-color: aqua;
+    }
+    ul li:last-child{
+        color: aqua;
+        background-color: yellow;
+    }
+    ul li:nth-child(2){
+        color: aquamarine;
+        background-color: blue;
+    }
+}
+.so5{
+    /* co ::before, ::after, ::first-letter chon chu cai dau tien,first-line chon dong dau tien,
+        ::marker chon cac diem danh danh dau cua cac the ul li,
+        ::selection chon mot vung van ban nguoi dung chon*/
+    .em::marker{
+        /* content: "v"; */
+        color: red;
+        background-color: aqua;
+        border-radius: 50%;
+        text-align: center;
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+    }
+}
+/* do mo la opacity va nhan gia tri tu 0-1*/
+.cssd{
+    opacity: 0.6;
+    /* tuc la anh se mo di 40% */
+}
