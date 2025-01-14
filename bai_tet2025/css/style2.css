@@ -1,0 +1,115 @@
+/* ba{
+    /* background-size: ; can chinh kich thuoc cua anh */
+    /* background-size: contain; la can chinh lap du tron trong o  */
+    /* background-size: cover; la dieu chinh sao cho nam trong o do va van thua 2 dau tren duoi cua o */
+
+/* } */ 
+
+.box1{
+    /* thuoc tinh position dung xac dinh vi tri bao gom co:static(giu nguyen nhu thuong khong co thay doi gi giu nguyen mac dinh), 
+    relative(vi tri tuong doi co the thay doi top left right) ,
+    absolute(vi tri ap dung theo phan boc ngoai cua lop neu dang khong co lop nao o ngoai thi se ap dung cho body) ,
+    fixed(la vi tri so voi khung hinh tuc la luon o vi tri co dinh so voi goc nhin cua man hinh), 
+    sticky(tuong tu nhu fixed va absolute va relative ngoai ra cac thuoc tinh chi hoat dong voi top bottom va right con left thi can them ca top) */
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    position: static;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+.box2{
+    background-color: brown;
+    background-image:url(/anh1.jpg);
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    position: relative;
+    top:10px;
+    left: 200px;
+}
+.box3{
+    border: solid 5px red;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:10px;
+    left: 100px;
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    position: static;
+    border: solid 5px black;
+}
+.box5{
+    height: 10px;
+    width: 10px;
+    background-color: blue;
+    position: absolute;
+    top: 100px;
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    position: fixed;
+    top: 10px;
+    left: 30px;
+}
+.box7{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: sticky;
+    top: 50px;
+}
+/* z index chỉ sử dụng với relative, absolute, fixed, sticky còn sẽ không hoạt động nếu như là static vì static sẽ chuyển định dạng là mặc định*/
+/* oveflow là một thuộc tính giúp cho thẻ có thể bị tràn nội dung được ẩn đi nếu như là hidden,
+còn nếu là vinsible thì vẫn sẽ hiển thị,
+neu la scroll thi se an di va hien thi thanh scroll de keo tha,
+neu la auto thi se tu dong hien thi thanh scroll con neu van du thi se khong hien thi thanh scroll */
+.box8{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 10px;
+    overflow: hidden;
+}
+.box9{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 10px;
+    overflow: visible;
+}
+.box10{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 10px;
+    overflow: scroll;
+}.box11{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    font-size: 10px;
+    overflow: auto;
+}
+
+
+/* thuoctinh1+thuoctinh2{
+    khi viet the nay thi no se khien cho thuoctinh2 co cung bac va nằm ngay sau thẻ thuoctinh1co kieu css
+} */
+/* the1~the2 
+khi viet nhu nay thi sẽ làm cho toàn bộ thẻ the2 co cung bac voi the1 co kieu định dạng css*/
+/* the1>the2
+    chọn toàn bộ các thẻ con nằm ngay sau the1 co kieu định dạng css
+*/
+/* the1 the2
+khi viet nhu nay thì toàn bộ the2 nằm trong the1
+ */
+
+.chill .chill1{
+    color: aqua;
+}
