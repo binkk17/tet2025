@@ -128,24 +128,28 @@
     border-radius: 10px;
     text-align: center;
     margin: 5px;
+    height: 400px;
     text-transform: uppercase;
     font-family: 'Courier New', Courier, monospace;
     font-size: medium;
 }
 .bbb .tp1{
     width: 25%;
+    height: 100%;
     background-color: aqua;
     /* border: solid 5px red; */
     float: left;
 }
 .bbb .tp3{
     width: 25%;
+    height: 100%;
     background-color: blue;
     /* border: solid red 5px; */
     float: right;
 }
 .bbb .tp2{
     width: calc(50%);
+    height: inherit;
     background-color: chartreuse;
     /* border: solid red 5px; */
     float: left;
@@ -162,3 +166,79 @@
     margin: 5px;
     border-radius: 10px;
 }
+/* ve phan don vi cua vw la theo kich thuoc cua man hinh theo chieu ngang,
+    vh la kich thuoc cua man hinh theo chieu cao
+    % la tinh gia tri cua phan tu cha
+*/
+
+
+/* Tinh dac hieu(Do uu tien): Do dac hieu phan theo 4 muc giam dan theo thu tu: 
+    Inline,     
+    ID,
+    Class,Attibute,pseudo-class,
+    Elements,pseudo-elements
+    Cach tinh dac hieu: Inline:1:0:0:0 vi kieu nay chi co mot nen chi co mot o hang nghin
+                        ID: 0:X:0:0    
+                        Class: 0:0:Y:0
+                        Elements: 0:0:0:Z
+                        Tinh tong lai vi du: ID: 0:4:0:0
+                                             Class:0:0:3:0
+                                             Elements:0:0:0:1
+                        Tong =1431
+    Ngoai ra viet css theo Intenal hay External thi cung khong co do uu tien ma phu thuoc vao cach o tren
+*/
+/* 
+    style{
+        h2{
+            color
+        }
+        co mot element
+        0-0-0-1 -> 1
+        h2 .lee{
+            color
+        }
+        co mot element va mot class
+        0-0-1-1 -> 11
+        div h2 .lee{
+            ksa
+        }
+        co 2 element va 1 class
+        0-0-1-2 ->12
+        div h2 .lcs:last-child{
+        }
+        co 2 element la div va h2 1 class va 1 pseudo-class
+        0-0-2-2 ->22
+        #main div .clas:first-child
+        1 id la #main 1 class 1 pseudo-class va 1 element
+        0-1-2-1 ->121       
+        inline-style: <div class="sakj" style="color=black;">
+        
+    }   
+*/
+/* Important(Quan trong) duoc su dung de thay doi thu tu uu tien cua thuoc tinh css, khi duoc gan !important nghia la dang o muc uu tien cao nhat
+
+ */
+h2{
+    color: red !important;
+}
+/* Cac ham trong css gom co 
+    calc() tra ve gia tri ham, 
+    max() tra ve gia tri max,
+    attr():tra ve gia tri cua mot thuoc tinh vi du <span data-text="xin chao">Tam biet</span> gia tri cua thuoc tinh o day cua data-text la "xin chao"
+    <style>
+        [data-text]::before{
+            content: attr(data-text);
+        }
+    </style>
+    <span data-text="xin chao">Tam biet</span>
+    co nghia la se them vao phia truoc cau tam biet gia tri cua data-text la "xin chao" ket qua hien thi: xin chao Tam biet,
+    var kieu gia tri: vi du : h2{local-i: blue; color: local-i }
+    
+    
+*/
+/* mac dinh khi su dung thuoc tinh width va hight thi chi ap dung cho phan content;
+    boxsizing gom 2 loai:
+    content-box: width va hight chi bao gom phan noi dung phan tu; width, hight=content;
+    border-box: width,hight bao gom content, padding, border cua mot phan tu; width,hight=content+padding+border
+    day la de tinh kich thuoc khi thiet lap giao dien     
+*/
