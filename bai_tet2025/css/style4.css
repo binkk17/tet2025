@@ -40,26 +40,27 @@ body{
 }
 .than .phu{
     /* font-size: 0; */
-    margin-top: 10px;    
-    
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .than .phu .coc{
     background-color: beige;
     text-align: center;
     padding-top:10px ;
     height: 300px;
-    width:calc(25%  - 7.5px);
-    margin-right: 10px;
- 
+    width: calc((100% - 30px) / 4);
+    /* margin-right: 10px; */
     margin-bottom: 10px;
     /* display: inline-block; */
     /* font-size: initial; */
-    float: left;
+    /* float: left; */
 
 }
-.than .phu .coc:nth-child(4){
+/* .than .phu .coc:nth-child(4){
     margin-right: 0;
-}
+} */
 .than .phu .coc::first-letter{
     text-transform: uppercase;
 }
@@ -74,8 +75,113 @@ body{
     .than .phu .coc{
         width:calc(50%  - 5px);
     }
-    .than .phu .coc:nth-child(2){
+    /* .than .phu .coc:nth-child(2){
         margin-right: 0;
-    }
+    } */
 
+}
+@media screen and (max-width:480px) {
+    .than .phu .coc{
+        width:calc(100%);
+    }
+}
+/* flexbox la kieu bo cuc trang
+    trong do conteiner la phan tu cha, item la phan tu con */
+
+/* display: inline-flex:  */
+.container{
+    background-image: url(/anh1.jpg);
+    /* height: 500px; */
+    border: solid 5px palegreen;
+    border-radius: 10px;
+    display: inline-flex;
+    margin: 10px;
+    padding: 30px 80px;
+}
+.item{
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+    border: solid red 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+
+}
+/* flex-direction la de sap xep lai cho cac item trong phan content trong do, mac dinh se luon la row nghia la tu trai qua phai,
+    row-reverse la tu phai qua trai 
+    column la sap xep theo chieu doc tu tren xuong,
+    column-reverse la sap xep theo chieu doc tu duoi len
+
+*/
+/* flex-wrap cho phep tu dong xuong dong hoac khong 
+    neu la nonwrap thi nghia la tat ca deu nam tren mot dong,
+    neu la wrap thi se tu dong xuong dong khi da du chieu rong cua container
+    neu la wrap-reverse thi thay vi xuong dong no se nhay len tren    
+*/
+
+.container{
+    flex-direction: row;
+    /* flex-direction: column;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;  */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: wrap; */
+}
+/* justify-content cho phep can chinh vi tri bat dau cua item theo truc main-axis
+    mac dinh la flex-start la bat dau tu vi tri bat dau cua container,
+    neu la flex-end thi se bat dau tu le main-end cua container,
+    space-between la phan item bat dau va ket thuc se nam sat voi le,
+    space-around la khoang cach giua item voi le = 1/2 khoang cach giua item voi item,
+    space-evenly la khoang cach giua item voi item= khoang cach giua item voi le
+
+*/
+.container{
+    justify-content: flex-end;
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+/* align-item dung de can chinh vi tri cac item theo truc cross-axis(truc doc) chi ap dung cho moi dong tuc la so voi vi tri cua dong do
+    stetch la tu dong tang chieu cao de lap day kich thuoc cua continer( se uu tien gia tri heigh hon neu co) mac dinh kieu nay tu dau,
+    flex-start se bat dau tu le cua cross-start,
+    flex-end se bat dau tu le duoi,
+    centter thi se can o giua
+
+
+
+*/
+
+.container{
+    align-items: stretch;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: center; */
+
+}
+/* align-content tuong tu nhu align-item nhung o day la de dung can chinh cho nhieu dong
+    mac dinh van la stretch va uu tien neu co hight,
+    flex-start se bat dau tu le cua cross-start,
+    flex-end se bat dau tu le duoi,
+    centter thi se can o giua
+
+
+*/
+.container{
+    align-content: stretch;
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+}
+/* align-self tuong tu nhu align-item nhung la ap dung cho mot item nao do */
+/* order dung de sap xep cac vi tri cua cac item  trong do gia tri phai >=0,ngoai ra mac dinh se la 0*/
+.item:nth-child(2){
+    order: 1;
+}
+.item:nth-child(1){
+    order: 2;
 }
