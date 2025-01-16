@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+.dau{
+    font-size: 40px;
+    background-color: aqua;
+    text-align: center;
+
+}
+
+.than .chinh{
+    width: auto;
+}
+.than .chinh .con{
+    text-align: center;
+    /* display: inline; */
+    float: left;
+    background-color: aquamarine;
+    width: 60%;
+    height: 600px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.than .chinh .asi{
+    text-align: center;
+    float: right;
+    width: 40%;
+    height: 600px;
+    background-color: bisque;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.bua{
+    clear: both;
+}
+.than .phu{
+    /* font-size: 0; */
+    margin-top: 10px;    
+    
+}
+.than .phu .coc{
+    background-color: beige;
+    text-align: center;
+    padding-top:10px ;
+    height: 300px;
+    width:calc(25%  - 7.5px);
+    margin-right: 10px;
+ 
+    margin-bottom: 10px;
+    /* display: inline-block; */
+    /* font-size: initial; */
+    float: left;
+
+}
+.than .phu .coc:nth-child(4){
+    margin-right: 0;
+}
+.than .phu .coc::first-letter{
+    text-transform: uppercase;
+}
+.duoi{
+    background-color: blueviolet;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .than .phu .coc{
+        width:calc(50%  - 5px);
+    }
+    .than .phu .coc:nth-child(2){
+        margin-right: 0;
+    }
+
+}
