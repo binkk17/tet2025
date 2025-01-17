@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+Wancho&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
 
 
+header{
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
 .header .header1{
     background-color: var(--color1);
     text-align: center;
@@ -17,6 +21,8 @@
     margin-right: auto;
     max-width: 1200px;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .header2 .iner-wrap{
     display: flex;
@@ -64,7 +70,10 @@
     display: flex;
 }
 .header2 .iner-wrap .logo2 ul li{
-    margin: 8px;
+    margin-right: 8px;
+}
+.header2 .iner-wrap .logo2 ul li:last-child{
+    margin-right: 0;
 }
 .header2 .iner-wrap .logo2 ul li a{
     font-size: 25px;
