@@ -1,0 +1,18 @@
+:root{
+    --color1: #103171;
+    --color2: #FEC700;
+    --color3: #13A05D;
+    --color4: #232323;
+    --color5: #17a2b8;
+    --text-font: 'Inria Serif', serif;
+
+}
+
+body{
+    font-family: var(--text-font);
+}
+a{
+    text-decoration: none;
+    color: var(--color1);
+
+}
