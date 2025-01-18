@@ -6,6 +6,7 @@ header{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 
+
 .header .header1{
     background-color: var(--color1);
     text-align: center;
@@ -15,6 +16,17 @@ header{
     font-size: 1.1rem;
     line-height: 1.5;
 }
+
+@media (max-width:870px){
+    .header .header1{
+        font-size: 0.8rem;
+        
+    }
+    .header2 .iner-wrap .lienhe{
+        display: none;
+    }
+}
+
 .header2{
     background-color: #ffffff;
     max-width: 1200px;
@@ -47,6 +59,7 @@ header{
     color: var(--color1);
     font-weight: bold;
 }
+
 .header2 .iner-wrap .menu1{
     display: flex;
     flex-wrap: wrap;
@@ -62,10 +75,6 @@ header{
     
 }
 
-/* .header2 .iner-wrap .logo2{
-    display: flex;
-    
-} */
 
 .header2 .iner-wrap .logo2 ul{
     display: flex;
@@ -79,6 +88,21 @@ header{
 .header2 .iner-wrap .logo2 ul li a{
     font-size: 25px;
     font-style: normal;
+}
+.header2 .iner-wrap .menu2{
+    display: none;
+}
+@media (max-width: 680px){
+    .header2 .iner-wrap .menu1{
+        display: none;
+    }
+    .header2 .iner-wrap .logo2{
+        display: none;
+    }
+    .header2 .iner-wrap .menu2{
+        display: block;
+        font-size: 22px;
+    }
 }
 .khoi-1{
     background-color: var(--color6);
@@ -180,5 +204,8 @@ header{
     color: var(--color1);
     font-weight: bold;
 }
-
+/* .sjs{ */
+    /* aspect-ratio: ; la ti le cua width/height cua element */
+    /* object-fit: ; la chi so de anh tu co gian het width va heigth ma khong bi vo */
+/* } */
 
