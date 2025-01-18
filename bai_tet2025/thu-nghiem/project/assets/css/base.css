@@ -4,12 +4,15 @@
     --color3: #13A05D;
     --color4: #232323;
     --color5: #17a2b8;
+    --color6: #eff1f4;
+    --color7:#6c757d;
     --text-font: 'Inria Serif', serif;
 
 }
 
 body{
     font-family: var(--text-font);
+    color: var(--color7);
 }
 a{
     text-decoration: none;

@@ -17,8 +17,6 @@ header{
 }
 .header2{
     background-color: #ffffff;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 1200px;
     width: 100%;
     padding-top: 10px;
@@ -28,6 +26,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .header2 .iner-wrap .logo1 a{
     flex-wrap: wrap;
@@ -59,6 +59,7 @@ header{
 }
 .header2 .iner-wrap .menu1 ul li a:hover{
     color: var(--color5);
+    
 }
 
 /* .header2 .iner-wrap .logo2{
@@ -78,6 +79,106 @@ header{
 .header2 .iner-wrap .logo2 ul li a{
     font-size: 25px;
     font-style: normal;
+}
+.khoi-1{
+    background-color: var(--color6);
+
+}
+.khoi-1 .cla{
+    background-color: var(--color6);
+    display: flex;
+    padding: 100px 0;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.khoi-1 .cla .text1{
+    width: 50%;
+    height: auto;
+
+}
+
+.khoi-1 .cla .image2{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+.khoi-1 .cla .text1 .dauvao{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--color1);
+}
+.khoi-1 .cla .text1 .vanban1{
+    color: var(--color1);
+    font-size: 22px;
+}
+.khoi-1 .cla .text1 .vien1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-content: space-between;
+    margin-bottom: 40px;
+}
+.khoi-1 .cla .text1 .vien1 .mini1{
+    font-size: 17px;
+    width: 50%;
+    
+}
+.khoi-1 .cla .text1 .vien1 .mini1 .fa-solid{
+    margin-right: 5px;
+}
+.khoi-1 .cla .text1 .vien1 .mini1 .fa-brands{
+    margin-right: 5px;
+}
+.khoi-1 .cla .text1 .link_button{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 25px;
+    height: 30px;
+    width: 150px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--color2);
+    border-radius: 25rem;
+    transition: all 0.3s ease;
+}
+.link_button{
+    background-color: var(--color2);
+    color: #ffffff;
+}
+.link_button:hover{
+    color: var(--color2);
+    background-color: aliceblue;
+}
+
+.khoi-1 .cla .image2 img{
+    width: 100%;
+    height: 100%;
+
+}
+.khoi-1 .cla .image2 .hinhtron{
+    position: absolute;
+    top: 0;
+    right: 120px;
+    background-color: var(--color2);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.khoi-1 .cla .image2 .hinhtron .x1{
+    font-size: 25px;
+    color: var(--color1);
+}
+.khoi-1 .cla .image2 .hinhtron .x2{
+    font-size: 45px;
+    color: var(--color1);
+    font-weight: bold;
 }
 
 
