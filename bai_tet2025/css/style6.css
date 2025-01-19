@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans+Wancho&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+:root{
+    --color1: #103171;
+    --color2: #FEC700;
+    --color3: #13A05D;
+    --color4: #232323;
+    --color5: #17a2b8;
+    --color6: #eff1f4;
+    --color7:#6c757d;
+}
+
+body{
+    margin: 0;
+    color: var(--color7);
+    font-family: 'Inria Serif', serif;
+}
+p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.container1{
+    background-color: var(--color6);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.container1 .thetren{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+.container1 .thetren .text1{
+    color: var(--color1);
+    font-size: 50px;
+    max-width: 630px;
+    text-align: center;
+    font-weight: bold;
+    /* justify-content: center; */
+}
+.container1 .thetren .text2{
+    font-size: 22px;
+    
+}
+
+.container1 .theduoi{
+    display: flex;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.container1 .theduoi .mohinh{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    flex-direction: column;
+    align-items: center;
+}
+.container1 .theduoi .mohinh i{
+    font-size: 22px;
+}
+.container1 .theduoi .mohinh .text3{
+    color: var(--color1);
+    font-size: 24px;
+    font-weight: bold;
+}
+.container1 .theduoi .mohinh .text4{
+    max-width: 200px;
+    text-align: center;
+}
+.container{
+    background-color: #13A05D;
+}
+.container-fluid{
+    background-color: #17a2b8;
+}
+/* Bootstrap la mot framework cua css va javascript hay noi gon hon la code viet san
+bootstrap ho tro cho ca file reset.css va file file base.css
+nen viet nhung bootstrap va truoc link den css vi sau de co the ghi de len duoc
+ca diem ngat trong bootstrap la 1200px 992px 768px 576px 
+*/
+/* .container giup can chinh chieu rong 2 ben va co do rong toi da la 1140px padding trai phai la 15px
+    .container-fluid co do rong full man hinh keo dai tu trai sang phai padding left va right la 15px
+
+
+
+*/
+/* trong bootstrap thi cho san ta 12 cot, neu nhu khong muon de 12 cot voi kich thuoc nhu vay thi ta co the gop cac cot bang cach
+    doi thanh col-2....12 toi da la 12 va min la 1  
+    khi css cho man lon hon 1200px thi se la xl: col-xl-so luong
+    */
+/* .row .col-1,.col-3{
+    border: #232323 solid 2px;
+    color: #FEC700;
+} */
+.khoitest{
+    background-color: #218fd8;
+    padding: 100px 0;
+}
+/* .container{
+    color: #FEC700;
+} */
+
+.row .col-xl-4{
+    background-color: rgb(148, 22, 22);
+    padding: 20px;
+    /* margin: 10px; */
+
+}
