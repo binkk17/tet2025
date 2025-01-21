@@ -1,1 +1,55 @@
 /* accordion la kieu the thu gon vao giong kieu bia sach */
+
+/* compoments
+
+    form hay sử dụng thường có cấu trúc bao gồm head, body trong phần head sẽ chứa các thông tin nhu title,  text mô tả,
+    phần body sẽ chứa các ô text để nhập thông tin    
+*/
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.sesection-2{
+    margin-top: 40px;
+
+}
+
+.sesection-2 .inner-main {
+    border: rgb(22, 201, 52) outset 2px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.sesection-2 .inner-head{
+    text-align: center;
+    background-color: yellowgreen;
+    padding: 10px;
+}
+.sesection-2 .inner-body{
+    border: 2px #ddd solid;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+.sesection-2  .inner-head .inner-title{
+    color: aquamarine;
+}
+.sesection-2 .inner-body .so1{
+    text-align: center;
+}
+.sesection-2 .inner-button{
+    background: -webkit-linear-gradient(-30deg,yellow, red 100%);
+    border: none;
+    border-radius: 45px;
+    padding: 10px 30px;
+    color: rgb(255, 238, 241);
+    font-weight: bold;
+}
+.sesection-2 .inner-button:hover{
+    background: -webkit-linear-gradient(30deg,green, yellow 100%);
+    color: rgb(248, 157, 0);
+
+}
