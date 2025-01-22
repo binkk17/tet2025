@@ -1,0 +1,22 @@
+.modal-form .modal-header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+}
+
+.modal-form .modal-header .btn-close{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background-color: aqua;
+    border: 2px aqua;
+    border-radius: 50%;
+    opacity: 1;
+    /* --bs-btn-close-color: red; */
+}
+.modal-form .modal-body .anhthe1{
+    width: 100%;
+}
