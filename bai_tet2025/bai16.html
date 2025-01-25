@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  cach viet string trong javascript theo kieu dau huyen `String` khong thi cu viet nhu thuong gion trong python
+    co the khai bao bien kieu chua co gia tri nhu var a;
+    symbol la kieu du lieu nguyen thuy thuong dung cho object day la kieu du lieu bat bien kieu giong nhu bien co dinh duy nhat trong mot trang 
+    -->
+
+    <!-- function la mot ham voi cu phap
+        function sum(a,b){
+        alert(a+b);
+        }
+        sum(a,b)
+    -->
+    <!-- kieu du lieu object
+    var inforUser = {
+        name: "Le Van Duan",
+        age: 35,
+        email: havan@gmail.com,
+
+
+    }
+    var listUser = {
+        no1 = "Le van doan",
+        no2 = "Le van 2",
+
+    }
+    listUser.sum = function(a,b){
+        alert(a+b);
+    }
+    console.log(inforUser.name);
+    console.log(listUser[1])
+    listUser.sum(10,20);
+    -->
+
+    <!-- <script>
+        var resuilt = confirm("ban on chu");
+
+        console.log(resuilt);
+
+        if(resuilt === true){
+            console.log("On thoi");
+        }
+        else{
+            console.log("Ke ban");
+        }
+    </script> -->
+    <!-- <script>
+        var resuilt = prompt("Hay nhap ten cua ban vao day");
+        var resuilt = prompt("Hay nhap ten vao day", "ha quan ");
+        o day doi so thu 2 la gia tri mac dinh se hien thi
+        console.log(resuilt);
+    </script> -->
+    <!-- ham console: log la thong bao, warn la canh bao, error la hien thi loi; -->
+     code setTimeout se chay mot lan duy nhat va cu phap
+     ham setInterval se chay lap di lap lai sau mot khoang thoi gian
+     typeof tra ve kieu du lieu cua bien
+     length tra ve do dai mot chuoi
+     tim vi tri dau tien cua mot chuoi nam trong mot chuoi thi su dung indexof va co phan biet chu hoa chu thuong, cu phao thi phan dau la chuoi can tim phan sau la thu tu bat dau tim kiem
+     slice dung de cat chuoi va tra ve mot chuoi moi cu phap thi sclice(start,end)
+     replace la cu phap dung de thay the trong do searchValue la gia tri muon thay the, va newValue la gia tri muon the vao: replace(oldValue, newValue)
+     co toUppercase va toLowercase
+     co trim() la xoa khoang trang dau chuoi
+     co charAt la lay gia tri char cua mot chuoi
+     split() la chuyen mot chuoi thanh mot mang array
+     isNaN la kieu kiem tra xem co phai la kieu so nguyen hay khong
+     co chuyen sang String la toString
+     ham toFixed(value) la ham lam tron trong do value la muon lam tron den bao nhieu chu so thap phan, mac dinh se la 0 va co the thay doi tuy lua chon
+     co ham join la noi thanh chuoi
+     ham .pop() la xoa di phan tu cuoi cung cua mot mang va dong thoi cung tra ve gia tri cuoi cung vua xoa cua chuoi do
+     ham push la them vao
+     ham .shift() la nguoc lai voi pop() la tra ve gia tri dau tien cua mang dong thoi xoa luon gia tri do
+     .unshift(item1,item2......) la them mot hoac nhieu gia tri vao dau cua mang 
+     ham splice(index,howmany,item1,item2,item3.....) la xoa/them phan tu trong do index la vi tri tai noi muon them hoac xoa, howmany la so luong phan tu muon xoa max dinh la 0, item1... la gia tri muon them vao va cung khong bat buoc
+    list1.concat(list2) dung de noi 2 mang voi nhau
+     <script>
+        setTimeout(function(){
+            console.log("Ban da doi 3 giay")
+        },3000);
+
+        setInterval(function(){
+            console.log("Da troi qua them 5 giay")
+        },5000);
+
+        var a = 10;
+        console.log(typeof a);
+        console.log(typeof setInterval);
+
+        var myname = "Xin chinha sskalska aslak";
+        console.log(myname.indexOf("chinha",0));
+        var mang = ["so1","so2","so3"];
+
+        console.log(mang.splice(0,2));
+        console.log(mang);
+     </script>
+</body>
+</html>
