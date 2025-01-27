@@ -44,3 +44,14 @@ var ten =[
 for(key of ten){
     console.log(key);
 }
+
+// phan su dung let
+
+if(true){
+    let c=10;
+    console.log(c);
+}
+// var c=11;
+console.log(c);
+// khai bao kieu const la kieu khai bao bien la hang so co dinh va khong the thay doi sau nay nua;
+// dung wow.js de link den trang lay hieu ung tren animate.css
