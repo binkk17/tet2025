@@ -36,6 +36,17 @@ var hamTraVe =  (...test) =>{
 
 var test = hamTraVe(10,20,30,40);
 
+// vi du ve forEach()
+
+var itemp = [1,2,3,4,5,6,7,8,9,10];
+var b = itemp.splice();
+tong = 0;
+itemp.forEach(function(ite,index,array){
+    console.log(ite," vi tri:",index, " mang: ",array)
+    tong+=ite;
+    b[index] = tong;
+})
+console.log("mang cuoi: ",b);
 document.addEventListener("DOMContentLoaded",function(){
     hienThiTen(ten);
     var ss = tongMang(tong);
