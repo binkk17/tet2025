@@ -46,6 +46,25 @@ itemp.forEach(function(ite,index,array){
     tong+=ite;
     b[index] = tong;
 })
+
+
+
+const giatriDiem = itemp.find(function(ite){
+    return ite>2;
+});
+
+const giatriDiem2 = itemp.filter(function(ite){
+    return ite>2;
+})
+console.log(giatriDiem);
+console.log("no o day",giatriDiem2);
+
+
+var till = itemp.reduce((total,it)=>{
+    return total +it;
+})
+console.log("tong day",till);
+
 console.log("mang cuoi: ",b);
 document.addEventListener("DOMContentLoaded",function(){
     hienThiTen(ten);
