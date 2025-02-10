@@ -8,6 +8,11 @@
 <body>
     
     <style>
+        body{
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         #colors{
             border: none;
             border-radius: 55px;
@@ -31,6 +36,60 @@
         <option value="yellow">mau vang</option>
         <option value="black">mau den</option>
     </select>
+
+    <button id="button1" >
+        nhap vao
+    </button>
+    <button id="button2">
+        nhan 2
+    </button>
+     
+    dom event listener giong nhu dom event nhung khac o cho la co the chon duoc nhieu su kien
+    <br>
+    co the lang nghe duoc nhung khong huy bo lang nghe duoc
+    cu phap: <br>
+    element.addEventListener("eventname",function(e){
+
+    }) 
+    <br>
+    trong do thi phan eventname can bo di chu "on" phia truoc vi du nhu onclick thi thanh click
+    <br>
+    neu muon remove thi phai dat no ham ra ben ngoai va o phan event thi goi den
+
+    <p id="result">Kết quả sẽ hiển thị ở đây</p>
+
+    <img src="/hinhanh/image3.png" alt="">
+    <script defer>
+        const color = document.querySelector("#colors");
+        let body = document.body;
+        color.onchange = function(){
+            let chon_maua = color.value;
+            console.log(chon_maua);
+            if(color.value=== "red"){
+                body.style.backgroundImage = "url('/hinhanh/anh1.jpg')";
+            }
+            else if(color.value === "yellow"){
+                body.style.backgroundImage = "url('/hinhanh/anh2.jpg')";
+            }
+            else{
+                body.style.backgroundImage = "url('/hinhanh/anh1.jpg')";
+            }            
+        }
+        let giatri1 = document.querySelector("#button1");
+        let giatri2 = document.querySelector("#button2");
+        let result = document.querySelector("#result");
+         
+        giatri1.addEventListener("click",function(){
+            result.innerHTML = giatri1.innerHTML;  // Hiển thị nội dung của button1 vào result
+            console.log(result.innerHTML); 
+        })
+        giatri2.addEventListener("click",function(){
+            result.innerHTML = giatri2.innerHTML;  // Hiển thị nội dung của button2 vào result
+            console.log(result.innerHTML); 
+        })
+
+        
+    </script>
 
 </body>
 </html>
