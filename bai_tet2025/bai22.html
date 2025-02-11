@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    dung nodeName de lay ra gia tri ten cua the vi du nhu div, box....
+    <br>
+    tao mot node moi hoan toan khong anh huong den nhung the html dang hien thi tren web: cu phap var tenbien = document.createElement("tagName");
+    <br>
+
+    <div class="parent">
+        <div class="childen-1">
+            <div class="Box">box 1</div>
+            <div class="Box"> box 2</div>
+            <div class="Box"> box 3</div>
+        </div>
+        <div class="childen-2">con2</div>
+        <div class="childen-3">con3</div>
+    </div>
+
+    <script defer>
+        const childent = document.querySelector(".childen-1");
+        console.log(childent);
+        console.log(childent.parentNode);
+        console.log(childent.childNodes);
+        console.log(childent.querySelectorAll(".Box"));
+        console.log(childent.firstChild);
+        console.log(childent.firstElementChild);
+        console.log(childent.lastElementChild);
+        console.log(childent.nextElementSibling);
+        console.log(childent.previousElementSibling);
+
+
+        const thep = document.createElement("div");
+        thep.innerHTML ="Quang Cao Thong thuong";
+        console.log(thep);
+
+        const thediv= document.querySelector(".parent");
+        thediv.append(thep);
+    </script>
+
+</body>
+</html>
