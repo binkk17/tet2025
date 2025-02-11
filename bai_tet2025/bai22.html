@@ -20,7 +20,18 @@
         <div class="childen-2">con2</div>
         <div class="childen-3">con3</div>
     </div>
-
+    textNode dung de them bo sung vao vi tri cuoi cung cua mot doi tuong html nao do cu phap : element_parent.appendChild(node_insert);
+    <br>
+    trong do element_parent la the cha, node_insert la node muon them vao
+    <br>
+    insertBefore la them mot not vao phia truoc: cu phap element_parent.insert_Before(node_insert,node_child);
+    <br>trong do thi node_child la node con ma muon them node_insert vao truoc do
+    <br>
+    removeChild la de xoa mot node ra ra khoi node hien tai: cu phap element_parent.removeChild(node_remove);
+    <br>trong do node_remove la node muon xoa
+    <br>
+    replace la thay the vi tri cua node cu phap: element_parent.replaceChild(node_insert,node_remove);
+    
     <script defer>
         const childent = document.querySelector(".childen-1");
         console.log(childent);
@@ -38,8 +49,13 @@
         thep.innerHTML ="Quang Cao Thong thuong";
         console.log(thep);
 
-        const thediv= document.querySelector(".parent");
-        thediv.append(thep);
+        setInterval(() => {
+            const thediv= document.querySelector(".parent");
+            thediv.append(thep);
+
+        },3000);
+
+
     </script>
 
 </body>
