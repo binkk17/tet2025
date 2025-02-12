@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    javascript se di chuyen toan bo bien len tren dau chuong trinh vi vay ma toan bo cac code lien quan den bien ma chua khai bao su dung ma chua khai bao se khong bi loi(bien trong hoisting);
+
+    <br>
+    neu voi bien kieu var thi neu su dung ma chua khai bao thi gia tri se tra ve la undifine con neu la let va const thi se bao loi
+    <br>
+    funtion TenHam(){} co tinh hoisting,(cach viet nay la declaration);
+    <br>
+    expression: var TenBien = funtion(){} khong co tinh hoisting;
+    <br>
+    arrow: var tenBien = ()=>{} khong co tinh hoisting;
+    <br>
+
+
+<!-- declaration -->
+    <!-- <script>
+        var a;
+        console.log(a);
+        a=10;
+
+
+        let b= 10;
+        let c=10;
+        let tong = sum(b,c);
+        console.log(tong);
+
+        function sum(mot,hai){
+            return(mot + hai);
+        }
+
+    </script> -->
+
+    <!-- expression -->
+    <!-- <script>
+        var a;
+        console.log(a);
+        a=10;
+
+
+        let b= 10;
+        let c=10;
+        let tong = sum(b,c);
+        console.log(tong);
+
+        var sum = function(mot,hai){
+            return(mot + hai);
+        }
+
+    </script> -->
+
+    <!-- arrow -->
+    <!-- <script>
+        var a;
+        console.log(a);
+        a=10;
+
+
+        let b= 10;
+        let c=10;
+        let tong = sum(b,c);
+        console.log(tong);
+
+        sum =(mot,hai) => {
+            return(mot + hai);
+        }
+
+    </script> -->
+
+    strict mode la che do code nghiem ngat tuc la bat buoc phai tuan theo nguyen tac cua javascript dua ra: cac loi nhu khai bao trung ten bien, ten ham, su dung bien ma chua duoc dinh nghia;
+    de su dung strict mode thi phai khai bao "use strict"; o truoc vi tri ma muon su dung co hai kieu la cuc bo va toan cuc;
+    <br>
+    
+    <!-- loii chua khai bao bien -->
+    <!-- <script>
+        "use strict";
+        a = 10;
+        console.log(a);
+
+
+
+    </script> -->
+<!-- loi trung ten bien -->
+    <!-- <script>
+        "use strict";
+
+        const a=10;
+
+        console.log(a);
+
+        var a =20;
+
+        console.log(a);
+
+    </script> -->
+
+    <!-- dung cuc bo -->
+    <!-- <script>
+
+     var x = ()=>{
+        "use strict";
+        .......
+     }
+    </script> -->
+
+</body>
+</html>
